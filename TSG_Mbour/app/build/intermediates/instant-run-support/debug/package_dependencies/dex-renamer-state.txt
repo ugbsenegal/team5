@@ -1,0 +1,4 @@
+#Fri Apr 05 22:41:26 GMT 2019
+base.0=/home/bmd/AndroidStudioProjects/TSG_Mbour/app/build/intermediates/transforms/dexMerger/debug/86
+path.0=classes.dex
+renamed.0=classes.dex
