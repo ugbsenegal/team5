@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TSG_Mbour</string>
+    <string name="btn_acceuil">Acceuil</string>
+    <string name="btn_bureau">Bureau</string>
+    <string name="btn_sport">Volet Sport</string>
+    <string name="btn_education">Volet Education</string>
+    <string name="btn_communication">Volet Communication</string>
+    <string name="btn_butmvt">But du Mouvement</string>
+    <string name="btn_inscription">Inscription</string>
+    <string name="a_propos">A propos</string>
+    <string name="aide">Aide</string>
+</resources>
