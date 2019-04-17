@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.bmd.tsg_mbour.Inscription">
+    tools:context="com.example.bmd.tsg_mbour.Inscription"
+    android:background="@drawable/tsg1">
 
 
     <LinearLayout
@@ -13,14 +14,18 @@
         android:layout_height="133dp"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp">
+        tools:layout_editor_absoluteY="8dp"
+        tools:ignore="MissingConstraints">
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
-            android:layout_height="173dp"
-            android:text="TextView"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+            android:layout_height="wrap_content"
+            android:text="INSCRIPTION"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
     </LinearLayout>
 
     <LinearLayout
@@ -33,51 +38,52 @@
         tools:layout_editor_absoluteX="8dp">
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/txt_Prenom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Prenom" />
+            android:hint="Prenom"
+            android:inputType="textPersonName" />
 
         <EditText
+            android:id="@+id/txt_Nom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Nom" />
+            android:hint="Nom"
+            android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/txt_Telephone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="phone"
-            android:text="Telephone" />
+            android:hint="Telephone"
+            android:inputType="phone" />
 
         <EditText
-            android:id="@+id/editText3"
+            android:id="@+id/txt_Fonction"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Fonction" />
+            android:hint="Fonction"
+            android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/editText4"
+            android:id="@+id/txt_Email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textEmailAddress"
-            android:text="Email" />
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
 
         <EditText
-            android:id="@+id/editText5"
+            android:id="@+id/txt_Password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPassword"
-            android:text="Mot de passe" />
+            android:hint="Mot de passe"
+            android:inputType="textPassword" />
     </LinearLayout>
 
     <LinearLayout
@@ -90,10 +96,11 @@
         tools:ignore="MissingConstraints">
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btn_Validerinscription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Valider" />
+            android:text="Valider"
+            style="@style/Widget.AppCompat.Button.Colored"/>
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

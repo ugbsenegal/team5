@@ -17,6 +17,11 @@ android {
         }
     }
 }
+android {
+    defaultConfig {
+        multiDexEnabled true
+    }
+}
 configurations.all {
     resolutionStrategy {
         force 'com.android.support:support-annotations:27.1.1'
@@ -30,4 +35,9 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    //noinspection GradleCompatible
+    implementation 'com.google.firebase:firebase-core:16.0.8'
+    compile 'com.google.firebase:firebase-firestore:18.2.0'
+    compile 'com.google.firebase:firebase-database:16.1.0'
 }
+apply plugin: 'com.google.gms.google-services'

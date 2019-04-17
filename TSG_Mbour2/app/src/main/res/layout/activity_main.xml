@@ -26,10 +26,9 @@
         android:layout_width="368dp"
         android:layout_height="374dp"
         android:orientation="vertical"
-        tools:ignore="MissingConstraints,UnknownId"
         app:layout_constraintTop_toBottomOf="@+id/ll1"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="160dp">
+        tools:ignore="MissingConstraints,UnknownId"
+        tools:layout_editor_absoluteX="8dp">
 
         <Button
             android:id="@+id/btn_acceuil"
@@ -49,47 +48,49 @@
             tools:layout_editor_absoluteX="137dp"
             tools:layout_editor_absoluteY="94dp" />
 
+
         <Button
-            android:id="@+id/btn_sport"
+            android:id="@+id/btn_butmvt"
+            style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="@string/btn_butmvt"
+            tools:layout_editor_absoluteX="137dp"
+            tools:layout_editor_absoluteY="421dp" />
+
+        <Button
+            android:id="@+id/btn_sport"
             style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="@string/btn_sport"
             tools:layout_editor_absoluteX="137dp"
             tools:layout_editor_absoluteY="161dp" />
 
         <Button
             android:id="@+id/btn_education"
+            style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="@style/Widget.AppCompat.Button.Colored"
             android:text="@string/btn_education"
             tools:layout_editor_absoluteX="137dp"
             tools:layout_editor_absoluteY="223dp" />
 
         <Button
             android:id="@+id/btn_communication"
+            style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="@style/Widget.AppCompat.Button.Colored"
             android:text="@string/btn_communication"
             tools:layout_editor_absoluteX="137dp"
             tools:layout_editor_absoluteY="290dp" />
 
-        <Button
-            android:id="@+id/btn_butmvt"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:text="@string/btn_butmvt"
-            tools:layout_editor_absoluteX="137dp"
-            tools:layout_editor_absoluteY="421dp" />
 
         <Button
             android:id="@+id/btn_inscription"
+            style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="@style/Widget.AppCompat.Button.Colored"
             android:text="@string/btn_inscription"
             tools:layout_editor_absoluteX="137dp"
             tools:layout_editor_absoluteY="356dp" />
