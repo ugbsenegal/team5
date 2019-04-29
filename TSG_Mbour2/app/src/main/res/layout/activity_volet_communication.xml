@@ -4,6 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/relLayoutcom"
+    android:background="#808080"
     tools:context="com.example.bmd.tsg_mbour.Volet_communication">
+
+    <ListView
+        android:id="@+id/listviewcom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#8080"
+        android:dividerHeight="1dp"></ListView>
+
 
 </android.support.constraint.ConstraintLayout>

@@ -51,17 +51,17 @@ public class Inscription extends AppCompatActivity {
         String password = txt_password.getText().toString().trim();
 
         if (TextUtils.isEmpty(prenom)) {
-            Toast.makeText(this, "Enter your prenom", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Enter votre prenom", Toast.LENGTH_LONG).show();
         } else if (TextUtils.isEmpty(nom)) {
-            Toast.makeText(this, "Enter your nom", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Enter votre nom", Toast.LENGTH_LONG).show();
         } else if (TextUtils.isEmpty(telephone)) {
-            Toast.makeText(this, "Enter your telephone", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Enter votre telephone", Toast.LENGTH_LONG).show();
         } else if (TextUtils.isEmpty(fonction)) {
-            Toast.makeText(this, "Enter your fonction", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Enter votre fonction", Toast.LENGTH_LONG).show();
         } else if (TextUtils.isEmpty(email)) {
-            Toast.makeText(this, "Enter your email", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Enter votre email", Toast.LENGTH_LONG).show();
         } else if (TextUtils.isEmpty(password)) {
-            Toast.makeText(this, "Enter your password", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Enter votre password", Toast.LENGTH_LONG).show();
         } else {
             String id = databaseReference.push().getKey();
             Membre membre = new Membre(prenom,nom,telephone,fonction,email,password);

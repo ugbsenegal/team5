@@ -1,10 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.bmd.tsg_mbour.But_du_mvt"
-    android:background="@drawable/tsg1">
+    tools:context="com.example.bmd.tsg_mbour.But_du_mvt">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/tv_headingtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LES DIFFERENTS BUT DU MOUVEMENT"
+        android:textSize="28sp"
+        android:textAlignment="center"
+        android:textColor="#808080"
+        android:textStyle="bold"/>
+
+    <TextSwitcher
+        android:id="@+id/tv_textSwitcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/tv_headingtext"
+        android:background="#303030" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_previoustext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Precedent"
+            android:onClick="onClick"/>
+
+
+        <Button
+            android:id="@+id/btn_nexttext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Suivant"
+            android:onClick="onClick"/>
+
+
+    </LinearLayout>
+</RelativeLayout>
